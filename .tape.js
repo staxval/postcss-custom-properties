@@ -1,7 +1,8 @@
 module.exports = {
-	'basic': {
+	/*
+	basic: {
 		message: 'supports basic usage'
-	},
+	}
 	'basic:preserve': {
 		message: 'supports { preserve: false } usage',
 		options: {
@@ -64,18 +65,19 @@ module.exports = {
 		},
 		expect: 'basic.import.expect.css',
 		result: 'basic.import.result.css'
-	},
+  },
+  */
 	'basic:import-js': {
 		message: 'supports { importFrom: "test/import-properties{-2}?.js" } usage',
 		options: {
-			importFrom: [
-				'test/import-properties.js',
-				'test/import-properties-2.js'
-			]
+			importFrom: ['test/import-properties.js'],
+			preserve: false,
+			themes: ['recruitmentAgency']
 		},
 		expect: 'basic.import.expect.css',
 		result: 'basic.import.result.css'
-	},
+	}
+	/*
 	'basic:import-css': {
 		message: 'supports { importFrom: "test/import-properties{-2}?.css" } usage',
 		options: {
@@ -264,5 +266,6 @@ module.exports = {
 		options: {
 			importFrom: {}
 		}
-	}
+  }
+  */
 };

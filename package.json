@@ -1,15 +1,14 @@
 {
-  "name": "postcss-custom-properties",
-  "version": "9.0.1",
+  "name": "@staxval/postcss-custom-properties",
+  "version": "0.0.1-rc.3",
   "description": "Use Custom Properties Queries in CSS",
   "author": "Jonathan Neal <jonathantneal@hotmail.com>",
   "contributors": [
-    "Maxime Thirouin"
+    "Maxime Thirouin",
+    "Vitaliy Starov"
   ],
   "license": "MIT",
-  "repository": "postcss/postcss-custom-properties",
-  "homepage": "https://github.com/postcss/postcss-custom-properties#readme",
-  "bugs": "https://github.com/postcss/postcss-custom-properties/issues",
+  "repository": "staxval/postcss-custom-properties",
   "main": "index.cjs.js",
   "module": "index.esm.mjs",
   "files": [
@@ -18,6 +17,9 @@
     "index.esm.mjs",
     "index.esm.mjs.map"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "prepublishOnly": "npm test",
     "pretest:tape": "rollup -c .rollup.js --silent",
